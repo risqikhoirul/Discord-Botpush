@@ -1,0 +1,27 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "<h3>Bahasa Indonesia</h3>\r <bt/>",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/risqikhoirul/Discord-Botpush.git"
+  },
+  "keywords": [],
+  "author": "M Khoirul Risqi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/risqikhoirul/Discord-Botpush/issues"
+  },
+  "homepage": "https://github.com/risqikhoirul/Discord-Botpush#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "dotenv": "^16.0.3",
+    "moment": "^2.29.4",
+    "node-fetch": "^2.6.7"
+  }
+}
