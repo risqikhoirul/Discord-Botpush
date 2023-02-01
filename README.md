@@ -1,5 +1,8 @@
 # Discord-Botpush
+Bot discord untuk menaikan level secara otomatis, bot ini mendukung multi akun atau multi token.
+Pastikan semua configurasi benar sesuai dokumentasi yang telah disediakan.
 
+#### Indonesia
 ## Get Token?
 
 1. Buka https://discord.com (WEB).
@@ -45,4 +48,16 @@ https://discord.com/serverID/channelID
 ```
 npm i
 npm start
+```
+## Output:
+![](https://raw.githubusercontent.com/risqikhoirul/Discord-Botpush/main/download%20(6).png)
+
+## Donation?
+EVM:
+```
+0x714Cb1145218871fAebD55de36dBE7053cc9C74d
+```
+Solana:
+```
+DWfcTjC1MB7oFPwQvF3VRHqwdoGg77A4XbqJKCPvJcd6
 ```
