@@ -1,5 +1,7 @@
 const fetch = require("node-fetch");
-const send = (chnl_id, token, mess) =>
+
+const fetcher ={
+  send: (chnl_id, token, mess) =>
   new Promise((resolve, reject) => {
     fetch(`https://discord.com/api/v9/channels/${chnl_id}/messages`, {
       method: "POST",
@@ -13,8 +15,8 @@ const send = (chnl_id, token, mess) =>
     })
       .then((response) => resolve(response))
       .catch((error) => reject(error));
-  });
-const check = (chnl_id, token) =>
+  }),
+  check: (chnl_id, token) =>
   new Promise((resolve, reject) => {
     fetch(`https://discord.com/api/v9/channels/${chnl_id}/messages`, {
       method: "GET",
@@ -27,8 +29,8 @@ const check = (chnl_id, token) =>
         resolve(response);
       })
       .catch((error) => reject(error));
-  });
-const delet = (chnl_id, msg_id, token) =>
+  }),
+  delet: (chnl_id, msg_id, token) =>
   new Promise((resolve, reject) => {
     fetch(`https://discord.com/api/v9/channels/${chnl_id}/messages/${msg_id}`, {
       method: "DELETE",
@@ -41,6 +43,7 @@ const delet = (chnl_id, msg_id, token) =>
         resolve(response);
       })
       .catch((error) => reject(error));
-  });
+  }),
+};
 
-module.exports = { send, check, delet };
+module.exports = fetcher;
