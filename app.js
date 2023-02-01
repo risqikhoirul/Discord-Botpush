@@ -63,7 +63,7 @@ const timeRed = () => {
           console.log(`[ ${timeRed()} ] ${usr} No detect message!!!`);
           break;
         } else {
-          await delay(process.env.DELAY);
+          await delay(process.env.DELAY_DELETE);
 
           const msgId = msg[0].id;
           const readDelet = await delet(process.env.CHANNEL_ID, msgId, token);
