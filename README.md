@@ -33,6 +33,12 @@ console.log(`%cYou now have your token in the clipboard!`, 'font-size: 16px');
 
 5. Token anda telah tersimpan di clipboard, silahkan paste di .env pada TOKEN="your_token"
 
+Anda juga bisa menggunakan tools gettoken.js
+```
+node gettoken
+```
+Silahkan masukan email dan password discord anda, anda akan menemulan token di file outoken.txt
+
 ## Install & Usage?
 
 ```
