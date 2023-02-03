@@ -27,4 +27,4 @@ const login = async (email, password) => {
   }
 };
 
-login("legionbaj@gmail.com", "thePriVat029");
+login("email@gmail.com", "password");
