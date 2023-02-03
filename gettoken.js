@@ -1,4 +1,5 @@
 const axios = require("axios");
+const readlineSync = require("readline-sync");
 const fs = require("fs");
 const login = async (email, password) => {
   try {
@@ -19,7 +20,7 @@ const login = async (email, password) => {
 
     fs.appendFile("outoken.txt", restkn, "utf8", (err) => {
       if (err) throw err;
-      console.log("token telah tersimpan di outoken.txt!");
+      console.log("\ntoken telah tersimpan di outoken.txt!");
     });
     console.log(token);
   } catch (error) {
@@ -27,4 +28,12 @@ const login = async (email, password) => {
   }
 };
 
-login("email@gmail.com", "password");
+console.log(
+  ` 
+GET TOKEN DISCORD
+Masukan Email Dan Password
+`
+);
+const email = readlineSync.question("Email? ");
+const pass = readlineSync.question("Password? ");
+login(email, pass);
