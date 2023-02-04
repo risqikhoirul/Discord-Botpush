@@ -27,13 +27,15 @@ const timeRed = () => {
   `);
   while (true) {
     const mess = process.env.MESSAGE.split(",");
-    const randomMsg = mess[Math.floor(mess.length * Math.random())];
+    // const randomMsg = mess[Math.floor(mess.length * Math.random())];
     const Token = process.env.TOKEN.split(",");
 
     let i = 0;
     while (i < Token.length) {
       const token = Token[i].trim();
       i++;
+      
+      const randomMsg = mess[Math.floor(mess.length * Math.random())];
 
       const readSend = await send(process.env.CHANNEL_ID, token, randomMsg);
 
