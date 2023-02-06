@@ -33,6 +33,14 @@ console.log(`%cYou now have your token in the clipboard!`, 'font-size: 16px');
 
 5. Token anda telah tersimpan di clipboard, silahkan paste di .env pada TOKEN="your_token"
 
+```
+node token <email> <password>
+```
+```
+node token risqi@gmail.id risqi123
+```
+atau
+
 Anda juga bisa menggunakan tools gettoken.js
 ```
 node gettoken
