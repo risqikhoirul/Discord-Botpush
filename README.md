@@ -30,8 +30,9 @@ window.webpackChunkdiscord_app.push([
 console.log('%cWorked!', 'font-size: 50px');
 console.log(`%cYou now have your token in the clipboard!`, 'font-size: 16px');
 ```
-
 5. Token anda telah tersimpan di clipboard, silahkan paste di .env pada TOKEN="your_token"
+  
+anda juga bisa menggunakan tools token.js
 
 ```
 node token <email> <password>
