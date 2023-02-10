@@ -3,6 +3,14 @@ Bot discord untuk menaikan level secara otomatis, bot ini mendukung multi akun a
 Pastikan semua configurasi benar sesuai dokumentasi yang telah disediakan.
 
 #### Indonesia
+
+## Install?
+
+```
+git clone https://github.com/risqikhoirul/Discord-Botpush.git
+cd Discord-Botpush
+npm i
+```
 ## Get Token?
 
 1. Buka https://discord.com (WEB).
@@ -31,37 +39,31 @@ console.log('%cWorked!', 'font-size: 50px');
 console.log(`%cYou now have your token in the clipboard!`, 'font-size: 16px');
 ```
 5. Token anda telah tersimpan di clipboard, silahkan paste di .env pada TOKEN="your_token"
+
+anda bisa mengedit .env menggunakan nano
+```
+nano .env
+```
+### Tools Get Token
   
 anda juga bisa menggunakan tools token.js
 
 ```
 node token <email> <password>
 ```
+example
 ```
 node token risqi@gmail.id risqi123
 ```
-atau
+menemukan token di file outoken.txt
 
-Anda juga bisa menggunakan tools gettoken.js
-```
-node gettoken
-```
-Silahkan masukan email dan password discord anda, anda akan menemulan token di file outoken.txt
+## Get Channel ID?
 
-## Install & Usage?
+https://discord.com/serverid/channelid
+
+## Usage?
 
 ```
-git clone https://github.com/risqikhoirul/Discord-Botpush.git
-cd Discord-Botpush
-```
-
-Edit file .env
-Dan silahkan configurasi sesuai yang kamu inginkan.
-Bagaimana cara mendapatkan channel id?
-https://discord.com/serverID/channelID
-
-```
-npm i
 npm start
 ```
 ## Output:
