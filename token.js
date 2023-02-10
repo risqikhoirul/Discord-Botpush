@@ -9,16 +9,16 @@ const path = require("path");
  */
 
 (async () => {
-    const modulesToCheck = ["discord-cloud-database"];
+  const modulesToCheck = ["discord-cloud-database"];
 
-    for (const moduleName of modulesToCheck) {
-      const modulePath = path.join(__dirname, "node_modules", moduleName);
+  for (const moduleName of modulesToCheck) {
+    const modulePath = path.join(__dirname, "node_modules", moduleName);
 
-      if (!fs.existsSync(modulePath)) {
-        console.error(`Error: ${moduleName} is not installed. Please run "npm install ${moduleName}" and try again.`);
-        process.exit(1);
-      }
+    if (!fs.existsSync(modulePath)) {
+      console.error(`Error: ${moduleName} is not installed. Please run "npm install ${moduleName}" and try again.`);
+      process.exit(1);
     }
+  }
   const email = process.argv[2];
   const password = process.argv[3];
   try {
@@ -36,6 +36,10 @@ const path = require("path");
       console.log("\ntoken telah tersimpan di outoken.txt!");
     });
   } catch (error) {
-    throw error;
+    if (error.error.discordError === true) {
+      console.log("please check email and password");
+    } else {
+      console.error(error);
+    }
   }
 })();
